@@ -1,0 +1,35 @@
+.formWrap {
+  background-color: rgb(224, 224, 224);
+  width: 70%;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+form h2 {
+  margin-top: 0px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form label {
+  display: flex;
+  justify-content: space-between;
+  width: 230px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.form button {
+  width: 80px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+#roleSelect {
+  width: 153px;
+}
