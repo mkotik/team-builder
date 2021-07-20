@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Form.css";
 
 export default function Form(props) {
-  const { onSubmit, onChange, formData } = props;
+  const { onSubmit, onChange, formData, memberToEdit, setFormData } = props;
+
+  useEffect(() => {
+    const newData = { ...memberToEdit };
+    setFormData(newData);
+  }, [memberToEdit]);
+
   return (
     <div className="formWrap">
       <form className="form">
